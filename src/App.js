@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { IoMdSearch } from 'react-icons/io';
 
-
 function App() {
 
   const [cidade, setCidade] = useState("")
@@ -10,20 +9,19 @@ function App() {
   const handleChange = (event) => {
    setCidade(event.target.value)
   }
-
+  const baseURL = `http://api.weatherapi.com/v1/current.json?key=49f1834cf8264440ad122012240601&q=${cidade}&lang=pt`
   const handleSearch = () => {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=49f1834cf8264440ad122012240601&q=${cidade}&lang=pt`
-    )
-      .then((response) => {
-        if(response.status === 200){
-          return response.json()
-        }
-      })
-      .then((data) => {
-        setPrevisao(data);
-      });
-  };
-
+    fetch(baseURL
+      )
+        .then((response) => {
+          if (response.status === 200) {
+            return response.json();
+          }
+        })
+        .then((data) => {
+          setPrevisao(data);
+        });
+    };
   return (
     <div>
       <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
