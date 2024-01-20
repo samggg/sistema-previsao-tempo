@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/sistema-previsao-tempo/static/js/main.1855a324.js",
+    "main.js": "/sistema-previsao-tempo/static/js/main.fbdcc66d.js",
     "index.html": "/sistema-previsao-tempo/index.html",
-    "main.1855a324.js.map": "/sistema-previsao-tempo/static/js/main.1855a324.js.map"
+    "main.fbdcc66d.js.map": "/sistema-previsao-tempo/static/js/main.fbdcc66d.js.map"
   },
   "entrypoints": [
-    "static/js/main.1855a324.js"
+    "static/js/main.fbdcc66d.js"
   ]
 }
